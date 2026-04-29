@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Food Ordering System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h2>Food Order Form</h2>
+      Pizza Quantity:<br />
+      <input type="number" id="pizza" />
+      Burger Quantity:<br />
+      <input type="number" id="burger" />
+      <button onclick="bill()">Generate Bill</button>
+      <h3 id="result"></h3>
+      <h2>Customer Feedback</h2>
+      <form onsubmit="return feedback();">
+        <textarea placeholder="Enter your feedback"></textarea>
+        <input type="submit" value="Submit feedback" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
